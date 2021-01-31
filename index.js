@@ -1,8 +1,12 @@
-function calculationSurfaceOfEllipse() {
-    // WRITE ME!
+function calculationSurfaceOfEllipse(axisA, axisB) {
+    const halfAxisA = axisA / 2
+    const halfAxisB = axisB / 2
+    const calculation = Math.PI * halfAxisA * halfAxisB
+    return calculation.toFixed(2) + "cm\xB2"
 }
 
-
+console.log(calculationSurfaceOfEllipse(40, 10))
+console.log(calculationSurfaceOfEllipse(53, 20))
 
 // in de READ ME, staat een uitleg hoe je het oppervlakte van een elipse berekend.
 
